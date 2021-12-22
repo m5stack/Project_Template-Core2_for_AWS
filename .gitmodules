@@ -1,0 +1,6 @@
+[submodule "components/esp-cryptoauthlib"]
+	path = components/esp-cryptoauthlib
+	url = https://github.com/aws-iot-edukit/esp-cryptoauthlib
+[submodule "components/Core2-for-AWS-IoT-EduKit"]
+	path = components/Core2-for-AWS-IoT-EduKit
+	url = https://github.com/m5stack/Core2-for-AWS-IoT-EduKit.git
