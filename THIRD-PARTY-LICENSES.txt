@@ -1,7 +1,7 @@
 ** ESP-CRYPTOAUTHLIB; version None --
 https://github.com/espressif/esp-cryptoauthlib
-Copyright 2018 Espressif Systems (Shanghai) PTE LTD
-copyright (c) 2015-2020 Microchip Technology Inc. and its subsidiaries.
+Copyright (c) 2018 Espressif Systems (Shanghai) PTE LTD
+Copyright (c) 2015-2020 Microchip Technology Inc. and its subsidiaries.
 
 (c) 2015-2021 Microchip Technology Inc. and its subsidiaries.
 
@@ -28,7 +28,7 @@ FEES, IF ANY, THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
 
 ------
 
-** Core2forAWS; version 2 --
+** Core 2 for AWS IoT EduKit BSP; version 2 --
 https://github.com/m5stack/Core2-for-AWS-IoT-EduKit/tree/BSP-dev
 
 Copyright (c) 2021 LVGL LLC (https://github.com/lvgl/)
