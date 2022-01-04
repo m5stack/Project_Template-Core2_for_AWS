@@ -15,11 +15,11 @@ In addition to this, either enable [Developer Mode](https://docs.microsoft.com/e
 
 To clone using HTTPS:
 ```
-git clone https://github.com/aws/amazon-freertos.git --recurse-submodules
+git clone https://github.com/aws-iot-edukit/Project_Template-Core2_for_AWS.git --recurse-submodules
 ```
 Using SSH:
 ```
-git clone git@github.com:aws/amazon-freertos.git --recurse-submodules
+git clone git@github.com:aws-iot-edukit/Project_Template-Core2_for_AWS.git --recurse-submodules
 ```
 
 If you have downloaded the repo without using the `--recurse-submodules` argument, you need to run:
