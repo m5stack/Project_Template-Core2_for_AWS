@@ -1,6 +1,6 @@
 # M5Stack Core2 for AWS IoT EduKit Project Template
 
-Project template for the M5Stack Core2 for AWS IoT EduKit reference hardware. Use this template as a baseline for creating your applications on your hardware. This includes all the drivers and configurations for using any/all of the hardware features on the devices. View the [API reference](https://edukit.workshop.aws/en/api-reference/v2/index.html) for using the included board support package.
+Project template for the M5Stack Core2 for AWS IoT EduKit reference hardware. Use this template as a baseline for creating your applications on your hardware. This includes all the drivers and configurations for using the hardware features on the devices. View the [API reference](https://edukit.workshop.aws/en/api-reference/v2/index.html) for using the included board support package.
 
 ## Cloning
 This repo uses [Git Submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules) to bring in dependent components.
