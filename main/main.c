@@ -12,6 +12,8 @@ static const char *TAG = "MAIN";
 
 void app_main( void )
 {
+	ESP_LOGI( TAG, "Starting application" );
+	
 	core2foraws_init();
 
 	/*
