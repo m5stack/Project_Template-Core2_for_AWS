@@ -28,8 +28,8 @@ FEES, IF ANY, THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
 
 ------
 
-** Core 2 for AWS IoT EduKit BSP; version 2 --
-https://github.com/m5stack/Core2-for-AWS-IoT-EduKit/tree/BSP-dev
+** Core 2 for AWS IoT Kit BSP; version 2 --
+https://github.com/m5stack/Core2-for-AWS-IoT-Kit/tree/BSP-dev
 
 Copyright (c) 2021 LVGL LLC (https://github.com/lvgl/)
 Copyright (c) 2021 Rop Gonggrijp (https://github.com/ropg)

@@ -1,8 +1,6 @@
-> <b>Effective March 6, 2023, AWS will end support for AWS IoT EduKit, a program that guided builders on how to develop simple IoT applications with AWS Partner reference hardware and tutorials. AWS IoT EduKit’s reference hardware kit is made and sold by our manufacturing partner, M5Stack Technology Co., Ltd. (https://m5stack.com/), who will continue to offer and support the kit and related software for interested customers.</b>
+# M5Stack Core2 for AWS IoT Kit Project Template
 
-# M5Stack Core2 for AWS IoT EduKit Project Template
-
-Project template for the M5Stack Core2 for AWS IoT EduKit reference hardware. Use this template as a baseline for creating your applications on your hardware. This includes all the drivers and configurations for using the hardware features on the devices. View the [API reference](https://edukit.workshop.aws/en/api-reference/v2/index.html) for using the included board support package.
+Project template for the M5Stack Core2 for AWS IoT Kit reference hardware. Use this template as a baseline for creating your applications on your hardware. This includes all the drivers and configurations for using the hardware features on the devices. View the [API reference](https://edukit.workshop.aws/en/api-reference/v2/index.html) for using the included board support package.
 
 ## Cloning
 This repo uses [Git Submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules) to bring in dependent components.
@@ -35,9 +33,9 @@ git submodule update --init --recursive
 
 This is the entry point for your application. Modify this file to create your own custom application.
 
-### components/Core2-for-AWS-IoT-EduKit
+### components/Core2-for-AWS-IoT-Kit
 
-This is the location of the [board support package](https://github.com/m5stack/Core2-for-AWS-IoT-EduKit). These include drivers and helper libraries for controlling the on-board peripherals on the device.
+This is the location of the [board support package](https://github.com/m5stack/Core2-for-AWS-IoT-Kit). These include drivers and helper libraries for controlling the on-board peripherals on the device.
 
 ### components/esp-cryptoauthlib
 
