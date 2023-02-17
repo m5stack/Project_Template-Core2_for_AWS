@@ -1,6 +1,6 @@
 # M5Stack Core2 for AWS IoT Kit Project Template
 
-Project template for the M5Stack Core2 for AWS IoT Kit reference hardware. Use this template as a baseline for creating your applications on your hardware. This includes all the drivers and configurations for using the hardware features on the devices. View the [API reference](https://edukit.workshop.aws/en/api-reference/v2/index.html) for using the included board support package.
+Project template for the M5Stack Core2 for AWS IoT Kit reference hardware. Use this template as a baseline for creating your applications on your hardware. This includes all the drivers and configurations for using the hardware features on the devices. View the API reference for using the included board support package.
 
 ## Cloning
 This repo uses [Git Submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules) to bring in dependent components.
@@ -15,11 +15,11 @@ In addition to this, either enable [Developer Mode](https://docs.microsoft.com/e
 
 To clone using HTTPS:
 ```
-git clone https://github.com/aws-iot-edukit/Project_Template-Core2_for_AWS.git --recurse-submodules
+git clone https://github.com/m5stack/Project_Template-Core2_for_AWS.git --recurse-submodules
 ```
 Using SSH:
 ```
-git clone git@github.com:aws-iot-edukit/Project_Template-Core2_for_AWS.git --recurse-submodules
+git clone git@github.com:m5stack/Project_Template-Core2_for_AWS.git --recurse-submodules
 ```
 
 If you have downloaded the repo without using the `--recurse-submodules` argument, you need to run:
