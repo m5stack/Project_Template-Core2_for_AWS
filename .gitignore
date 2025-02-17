@@ -1,15 +1,29 @@
 .vscode
 **/.DS_Store
 
-.pio
-build
+**/.pio
+**/build
 sdkconfig
 sdkconfig.old
 sdkconfig.core2foraws
-dependencies.lock
+sdkconfig.core2foraws.old
 
 **/__pycache__
 *.py[cod]
 
 **/*.key
 **/*.pem
+
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Testing
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps
+managed_components
+dependencies.lock
