@@ -7,12 +7,6 @@ This repo uses [Git Submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodu
 
 Note: If you download the ZIP file provided by GitHub UI, you will not get the contents of the submodules. Since the downloaded zip will also not be a git repository, you will not be able to compile the code since that is a toolchain requirement. You must clone the repository using the instructions below.
 
-If using Windows, because this repository and its submodules contain symbolic links, set `core.symlinks` to true with the following command:
-```
-git config --global core.symlinks true
-```
-In addition to this, either enable [Developer Mode](https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development) or, whenever using a git command that writes to the system (e.g. `git pull`, `git clone`, and `git submodule update --init --recursive`), use a console elevated as administrator so that git can properly create symbolic links for this repository. Otherwise, symbolic links will be written as normal files with the symbolic links' paths in them as text. [This](https://blogs.windows.com/windowsdeveloper/2016/12/02/symlinks-windows-10/) gives more explanation.
-
 To clone using HTTPS:
 ```
 git clone https://github.com/m5stack/Project_Template-Core2_for_AWS.git --recurse-submodules
@@ -37,13 +31,26 @@ This is the entry point for your application. Modify this file to create your ow
 
 This is the location of the [board support package](https://github.com/m5stack/Core2-for-AWS-IoT-Kit). These include drivers and helper libraries for controlling the on-board peripherals on the device.
 
-### components/esp-cryptoauthlib
+### managed_components/
 
-This is a [ported cryptoauthlib](https://github.com/espressif/esp-cryptoauthlib) from Espressif. This fork is a specific port for the Core2 for AWS reference hardware. This library enables use of the on-board secure element and is tightly integrated with the ESP-IDF. The name of the folder should not be modified.
+Third-party dependencies of the board support package (LVGL, esp-cryptoauthlib, ESP LCD/touch drivers, network provisioning, etc.) are declared in the BSP's `idf_component.yml` and downloaded here automatically by the ESP-IDF Component Manager at build time. This folder is not tracked by git; do not edit its contents.
 
-### partitions_16mb.csv
+### sdkconfig.defaults
 
-This is the partition table recommended for most applications. It provides sufficient file system sizes for storing Wi-Fi credentials, the user application, OTA updates, additional file storage, and storage for SPIFFS in the on-board flash. This utilizes the internal + external flash memory.
+Project configuration defaults (flash, PSRAM, Bluetooth, mbedTLS, LVGL, and the BSP's hardware feature switches). The generated `sdkconfig.core2foraws` only picks up a default when that option is not already present, so delete it after changing this file to regenerate it.
+
+The serial console runs at 921600 baud, matching `monitor_speed` in `platformio.ini`.
+
+### partitions_16MB.csv
+
+This is the partition table recommended for most applications. It provides sufficient file system sizes for storing Wi-Fi credentials, the user application, OTA updates, core dumps, additional file storage, and storage for SPIFFS in the on-board flash.
+
+### test/test_hw_stability
+
+On-device Unity test suite for the board support package and the template configuration. With the device connected, run:
+```
+pio test -e core2foraws
+```
 
 ## Security
 
@@ -51,5 +58,5 @@ See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more inform
 
 ## License
 
-This library is licensed under the MIT-0 License. See the LICENSE file.
+This library is licensed under the MIT License. See the LICENSE file.
 
